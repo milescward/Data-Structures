@@ -6,12 +6,14 @@ namespace DataStructures.SinglyLinkedList
     {
         private Node Head { get; set; }
         public int Count { get; private set; }
+        public static bool IsEmpty { get; private set; }
 
         public void Add(Node node)
         {
             if (Head == null)
             {
                 Head = node;
+                IsEmpty = false;
             }
             else
             {
@@ -36,6 +38,10 @@ namespace DataStructures.SinglyLinkedList
                 {
                     iterator.Next = iterator.Next.Next;
                     Count--;
+                    if (Count == 0)
+                    {
+                        IsEmpty = true;
+                    }
                     return;
                 }
                 iterator = iterator.Next;
@@ -51,6 +57,11 @@ namespace DataStructures.SinglyLinkedList
                 Console.Write($"{iterator.Data} ->  ");
                 iterator = iterator.Next;
             }
+        }
+
+        public sgLinkedList()
+        {
+            IsEmpty = true;
         }
     }
 }
