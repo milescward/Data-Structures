@@ -9,8 +9,14 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         [Fact]
         public void IsEmptyTestFalse()
         {
+            //Arrange
             var ll = new mySinglyLinkedList();
             ll.Add(1);
+            //Act
+            var expected = false;
+            var actual = ll.IsEmpty;
+            //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -21,6 +27,60 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
             //Act
             var actual = ll.IsEmpty;
             var expected = true;
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DeleteFirstTest()
+        {
+            //Arrange
+            var myList = new mySinglyLinkedList();
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
+
+            //Act
+            myList.Delete(3);
+            var expected = 2;
+            var actual = myList.Count;
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DeleteLastTest()
+        {
+            //Arrange
+            var myList = new mySinglyLinkedList();
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
+
+            //Act
+            myList.Delete(1);
+            var expected = 2;
+            var actual = myList.Count;
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DeleteNullTest()
+        {
+            //Arrange
+            var myList = new mySinglyLinkedList();
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
+
+            //Act
+            myList.Delete(4);
+            var expected = 3;
+            var actual = myList.Count;
+
             //Assert
             Assert.Equal(expected, actual);
         }
@@ -54,6 +114,23 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
             //Act
             var expected = 2;
             var actual = myList.Count;
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void DisplayTest()
+        {
+            //Arrange
+            var ll = new mySinglyLinkedList();
+            ll.Add(1);
+            ll.Add(2);
+            ll.Add(3);
+
+            //Act
+            var expected = "3 ->  2 ->  1 ->  ";
+            var actual = ll.Display();
+
             //Assert
             Assert.Equal(expected, actual);
         }

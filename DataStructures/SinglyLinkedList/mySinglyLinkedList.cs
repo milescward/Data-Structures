@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using DataStructures.BinaryTree;
 
 namespace DataStructures.SinglyLinkedList
@@ -9,6 +10,7 @@ namespace DataStructures.SinglyLinkedList
         public int Count { get; private set; }
         public bool IsEmpty { get; private set; }
 
+        //Adds a node to the front of the list
         private void AddNode(Node node)
         {
             if (Head == null)
@@ -60,14 +62,17 @@ namespace DataStructures.SinglyLinkedList
             Console.WriteLine("Value not found in list");
         }
 
-        public void Display()
+        //Displays the list as a string
+        public string Display()
         {
             Node iterator = Head;
+            var sb = new StringBuilder();
             while (iterator != null)
             {
-                Console.Write($"{iterator.Data} ->  ");
+                sb.Append($"{iterator.Data} ->  ");
                 iterator = iterator.Next;
             }
+            return sb.ToString();
         }
 
         public mySinglyLinkedList()
