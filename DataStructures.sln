@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{6A49CFFE-E3B2-46A8-8524-45FFD56B7B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "DataStructures.Tests\Tests.csproj", "{7EE69817-040C-4836-9ECC-19FDAEB7B5A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A49CFFE-E3B2-46A8-8524-45FFD56B7B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A49CFFE-E3B2-46A8-8524-45FFD56B7B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A49CFFE-E3B2-46A8-8524-45FFD56B7B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A49CFFE-E3B2-46A8-8524-45FFD56B7B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE69817-040C-4836-9ECC-19FDAEB7B5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE69817-040C-4836-9ECC-19FDAEB7B5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE69817-040C-4836-9ECC-19FDAEB7B5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE69817-040C-4836-9ECC-19FDAEB7B5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
