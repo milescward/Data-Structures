@@ -7,16 +7,22 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
     public class SinglyLinkedListTests
     {
         [Fact]
-        public void IsEmptyTestTrue()
+        public void IsEmptyTestFalse()
         {
             var ll = new mySinglyLinkedList();
-            ll.Delete(2);
+            ll.Add(1);
         }
 
         [Fact]
-        public void IsEmptyTestFalse()
+        public void IsEmptyTestTrue()
         {
-
+            //Arrange
+            var ll = new mySinglyLinkedList();
+            //Act
+            var actual = ll.IsEmpty;
+            var expected = true;
+            //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
@@ -24,9 +30,9 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         {
             //Arrange
             var myList = new mySinglyLinkedList();
-            myList.Add(new Node(1));
-            myList.Add(new Node(2));
-            myList.Add(new Node(3));
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
 
             //Act
             var expected = 3;
@@ -40,14 +46,14 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void CountTest()
         {
             //Arrange
-            var ll = new mySinglyLinkedList();
-            ll.Add(new Node(1));
-            ll.Add(new Node(2));
-            ll.Add(new Node(3));
-            ll.Delete(3);
+            var myList = new mySinglyLinkedList();
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
+            myList.Delete(3);
             //Act
             var expected = 2;
-            var actual = ll.Count;
+            var actual = myList.Count;
             //Assert
             Assert.Equal(expected, actual);
         }

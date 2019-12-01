@@ -1,4 +1,5 @@
 ﻿using System;
+using DataStructures.BinaryTree;
 
 namespace DataStructures.SinglyLinkedList
 {
@@ -6,9 +7,9 @@ namespace DataStructures.SinglyLinkedList
     {
         private Node Head { get; set; }
         public int Count { get; private set; }
-        public static bool IsEmpty { get; private set; }
+        public bool IsEmpty { get; private set; }
 
-        public void Add(Node node)
+        private void AddNode(Node node)
         {
             if (Head == null)
             {
@@ -23,20 +24,29 @@ namespace DataStructures.SinglyLinkedList
             Count++;
         }
 
+        public void Add(int data)
+        {
+            Node node = new Node(data);
+            AddNode(node);
+        }
+
         // Deletes the first occurance of a target in the linked list 
         public void Delete(int target)
         {
             if (Head.Data == target)
             {
                 Head = Head.Next;
+                Count--;
+                return;
             }
-
-            Node iterator = Head;
+            Node iterator = Head.Next;
+            Node prev = Head;
             while (iterator != null)
             {
-                if (iterator.Next.Data == target)
+                if (iterator.Data == target)
                 {
-                    iterator.Next = iterator.Next.Next;
+                    prev.Next = iterator.Next;
+                    iterator.Next = null;
                     Count--;
                     if (Count == 0)
                     {
@@ -45,6 +55,7 @@ namespace DataStructures.SinglyLinkedList
                     return;
                 }
                 iterator = iterator.Next;
+                prev = prev.Next;
             }
             Console.WriteLine("Value not found in list");
         }
