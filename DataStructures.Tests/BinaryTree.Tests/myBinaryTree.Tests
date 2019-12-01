@@ -1,0 +1,10 @@
+﻿using System;
+namespace DataStructures.Tests.BinaryTree.Tests
+{
+	public class myBinaryTree
+	{
+		public myBinaryTree()
+		{
+		}
+	}
+}

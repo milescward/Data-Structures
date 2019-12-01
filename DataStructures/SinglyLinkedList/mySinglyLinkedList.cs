@@ -2,7 +2,7 @@
 
 namespace DataStructures.SinglyLinkedList
 {
-    public class sgLinkedList
+    public class mySinglyLinkedList
     {
         private Node Head { get; set; }
         public int Count { get; private set; }
@@ -59,7 +59,7 @@ namespace DataStructures.SinglyLinkedList
             }
         }
 
-        public sgLinkedList()
+        public mySinglyLinkedList()
         {
             IsEmpty = true;
         }

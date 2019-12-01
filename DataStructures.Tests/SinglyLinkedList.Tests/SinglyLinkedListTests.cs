@@ -9,7 +9,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         [Fact]
         public void IsEmptyTestTrue()
         {
-            var ll = new sgLinkedList();
+            var ll = new mySinglyLinkedList();
             ll.Delete(2);
         }
 
@@ -23,7 +23,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void AddTest()
         {
             //Arrange
-            var myList = new sgLinkedList();
+            var myList = new mySinglyLinkedList();
             myList.Add(new Node(1));
             myList.Add(new Node(2));
             myList.Add(new Node(3));
@@ -40,7 +40,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void CountTest()
         {
             //Arrange
-            var ll = new sgLinkedList();
+            var ll = new mySinglyLinkedList();
             ll.Add(new Node(1));
             ll.Add(new Node(2));
             ll.Add(new Node(3));
