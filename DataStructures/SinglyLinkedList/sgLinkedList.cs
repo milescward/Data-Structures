@@ -21,7 +21,7 @@ namespace DataStructures.SinglyLinkedList
             Count++;
         }
 
-        // Deletes the first occurance of a target in the linked list
+        // Deletes the first occurance of a target in the linked list 
         public void Delete(int target)
         {
             if (Head.Data == target)
