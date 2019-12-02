@@ -1,5 +1,4 @@
 # DATA STRUCTURES
----------------
 ### Singly Linked List
 
 <details><summary>Methods</summary>
@@ -45,9 +44,11 @@
       classes generic.
 - [X] Add new node
 - [X] Compare two generic nodes
+- [X] Insert a value 
+  - [X] Between two specific nodes
+  - [X] After one specific node
 - [X] Delete a specific value from the list
 - [X] Display all node values
-- [ ] Display values in reverse
 
 </p>
 </details>
