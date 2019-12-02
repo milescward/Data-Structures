@@ -15,7 +15,7 @@ accompanying unit tests for all properties and methods
 - [X] Compare two generic nodes
 - [X] Delete a specific value from the list
 - [X] Display all node values
-- [ ] Display values in reverse
+- [X] Display values in reverse
 
 </p>
 </details>
