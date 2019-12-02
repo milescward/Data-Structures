@@ -33,7 +33,7 @@ accompanying unit tests for all properties and methods
   - [X] from the back
   - [X] nonexistant value
 - [X] Display all node values
-- [ ] Display values in reverse
+- [X] Display values in reverse
 
 </p>
 </details>
