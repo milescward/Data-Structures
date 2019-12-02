@@ -9,5 +9,7 @@
     <Folder Include="SinglyLinkedList\" />
     <Folder Include="BinaryTree\" />
     <Folder Include="Stack\" />
+    <Folder Include="Queue\" />
+    <Folder Include="DoublyLinkedList\" />
   </ItemGroup>
 </Project>
