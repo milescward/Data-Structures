@@ -45,7 +45,6 @@ namespace DataStructures.Queue
             return Top;
         }
 
-
         public myStack()
         {
             ll = new mySinglyLinkedList<T>();
