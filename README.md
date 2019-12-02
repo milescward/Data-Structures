@@ -12,6 +12,7 @@
 - [X] Compare two generic nodes
 - [X] Delete a specific value from the list
 - [X] Display all node values
+- [ ] Display values in reverse
 
 </p>
 </details>
@@ -23,10 +24,12 @@
   - [X] IsEmpty Property
   - [X] Count Property
 - [X] Add new node
-- [X] Delete a value from the front
-- [X] Delete a value from the back
-- [X] Delete a nonexistant value
+- [X] Delete a value 
+  - [X] from the front
+  - [X] from the back
+  - [X] nonexistant value
 - [X] Display all node values
+- [ ] Display values in reverse
 
 </p>
 </details>
@@ -40,6 +43,11 @@
 - [X] Insert new node
 - [X] Insert recursively
 - [X] Display all nodes
+- [ ] Traversals
+  - [ ] Inorder
+  - [ ] Preorder
+  - [ ] Postorder
+  - [ ] Breadth First Search (BFS)
 
 </p>
 </details>
@@ -51,6 +59,11 @@
 - [ ] Insert
 - [ ] Insert recursively
 - [ ] Display
+- [ ] Traversals
+  - [ ] Inorder
+  - [ ] Preorder
+  - [ ] Postorder
+  - [ ] Breadth First Search (BFS)
 
 </p>
 </details>
