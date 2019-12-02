@@ -10,7 +10,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void IsEmptyTestFalse()
         {
             //Arrange
-            var ll = new mySinglyLinkedList();
+            var ll = new mySinglyLinkedList<int>();
             ll.Add(1);
             //Act
             var expected = false;
@@ -23,7 +23,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void IsEmptyTestTrue()
         {
             //Arrange
-            var ll = new mySinglyLinkedList();
+            var ll = new mySinglyLinkedList<int>();
             //Act
             var actual = ll.IsEmpty;
             var expected = true;
@@ -35,7 +35,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void DeleteFirstTest()
         {
             //Arrange
-            var myList = new mySinglyLinkedList();
+            var myList = new mySinglyLinkedList<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
@@ -53,7 +53,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void DeleteLastTest()
         {
             //Arrange
-            var myList = new mySinglyLinkedList();
+            var myList = new mySinglyLinkedList<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
@@ -71,7 +71,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void DeleteNullTest()
         {
             //Arrange
-            var myList = new mySinglyLinkedList();
+            var myList = new mySinglyLinkedList<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
@@ -89,7 +89,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void AddTest()
         {
             //Arrange
-            var myList = new mySinglyLinkedList();
+            var myList = new mySinglyLinkedList<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
@@ -106,7 +106,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void CountTest()
         {
             //Arrange
-            var myList = new mySinglyLinkedList();
+            var myList = new mySinglyLinkedList<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
@@ -122,7 +122,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void DisplayTest()
         {
             //Arrange
-            var ll = new mySinglyLinkedList();
+            var ll = new mySinglyLinkedList<int>();
             ll.Add(1);
             ll.Add(2);
             ll.Add(3);

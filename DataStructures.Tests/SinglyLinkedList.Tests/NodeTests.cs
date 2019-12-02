@@ -10,7 +10,7 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void DataTest()
         {
             //Arrange
-            Node myNode = new Node(1);
+            Node<int> myNode = new Node<int>(1);
             //Act
             var expected = 1;
             var actual = myNode.Data;
@@ -22,8 +22,8 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
         public void NextTest()
         {
             //Arrange
-            var node1 = new Node(1);
-            var node2 = new Node(2);
+            var node1 = new Node<int>(1);
+            var node2 = new Node<int>(2);
             //Act
             node1.Next = node2;
             var expected = 2;

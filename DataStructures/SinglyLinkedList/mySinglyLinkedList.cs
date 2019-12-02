@@ -1,17 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using DataStructures.BinaryTree;
 
 namespace DataStructures.SinglyLinkedList
 {
-    public class mySinglyLinkedList
+    public class mySinglyLinkedList<T>
     {
-        private Node Head { get; set; }
+        private Node<T> Head { get; set; }
         public int Count { get; private set; }
         public bool IsEmpty { get; private set; }
 
         //Adds a node to the front of the list
-        private void AddNode(Node node)
+        private void AddNode(Node<T> node)
         {
             if (Head == null)
             {
@@ -26,26 +27,30 @@ namespace DataStructures.SinglyLinkedList
             Count++;
         }
 
-        public void Add(int data)
+        public void Add(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
             AddNode(node);
         }
 
-        // Deletes the first occurance of a target in the linked list 
-        public void Delete(int target)
+        private bool Compare<T>(T x, T y)
         {
-            if (Head.Data == target)
+            return EqualityComparer<T>.Default.Equals(x, y);
+        }
+        // Deletes the first occurance of a target in the linked list 
+        public void Delete(T target)
+        {
+            if (Compare(Head.Data, target))
             {
                 Head = Head.Next;
                 Count--;
                 return;
             }
-            Node iterator = Head.Next;
-            Node prev = Head;
+            Node<T> iterator = Head.Next;
+            Node<T> prev = Head;
             while (iterator != null)
             {
-                if (iterator.Data == target)
+                if (Compare(iterator.Data, target))
                 {
                     prev.Next = iterator.Next;
                     iterator.Next = null;
@@ -65,7 +70,7 @@ namespace DataStructures.SinglyLinkedList
         //Displays the list as a string
         public string Display()
         {
-            Node iterator = Head;
+            Node<T> iterator = Head;
             var sb = new StringBuilder();
             while (iterator != null)
             {
