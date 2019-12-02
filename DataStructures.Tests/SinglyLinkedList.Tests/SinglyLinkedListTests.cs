@@ -134,5 +134,25 @@ namespace DataStructures.Tests.SinglyLinkedList.Tests
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void ReverseTest()
+        {
+            //Arrange
+            var ll = new mySinglyLinkedList<int>();
+            ll.Add(5);
+            ll.Add(4);
+            ll.Add(3);
+            ll.Add(2);
+            ll.Add(1);
+
+            //Act
+            var expected = "5 ->  4 ->  3 ->  2 ->  1 ->  ";
+            ll.Reverse();
+            var actual = ll.Display();
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
