@@ -80,6 +80,23 @@ namespace DataStructures.SinglyLinkedList
             return sb.ToString();
         }
 
+        public void Reverse()
+        {
+            this.Head = Reverse(Head);
+        }
+
+        private Node<T> Reverse(Node<T> head)
+        {
+            if (head == null || head.Next == null)
+                return head;
+
+            var newHead = Reverse(head.Next);
+            head.Next.Next = head;
+            head.Next = null;
+
+            return newHead;
+        }
+
         public mySinglyLinkedList()
         {
             IsEmpty = true;
