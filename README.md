@@ -1,4 +1,8 @@
 # DATA STRUCTURES
+
+My creation and implementation of major data structures from scratch with 
+accompanying unit tests for all properties and methods
+
 ### Singly Linked List
 
 <details><summary>Methods</summary>
@@ -134,3 +138,27 @@
 </details>
 
 ### Queue
+
+<details><summary>Methods</summary>
+<p>
+
+- [X] Create Doubly Linked List class
+- [X] Enqueue
+- [X] Dequeue
+- [X] Peek
+
+</p>
+</details>
+
+<details><summary>Tests</summary>
+<p>
+
+- [ ] Enqueue
+  - [ ] Enqueue invalid value
+- [ ] Dequeue
+  - [ ] Dequeue on an empty list
+- [ ] Peek
+  - [ ] Peek an empty list
+
+</p>
+</details>
