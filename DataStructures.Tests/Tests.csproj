@@ -31,4 +31,8 @@
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="BinaryTree.Tests\myBinaryTree.Tests" />
+    <None Remove="BinaryTree.Tests\TreeNode.Tests" />
+  </ItemGroup>
 </Project>
