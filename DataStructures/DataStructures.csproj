@@ -8,6 +8,6 @@
   <ItemGroup>
     <Folder Include="SinglyLinkedList\" />
     <Folder Include="BinaryTree\" />
-    <Folder Include="Queue\" />
+    <Folder Include="Stack\" />
   </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@ namespace DataStructures.SinglyLinkedList
 {
     public class mySinglyLinkedList<T>
     {
-        private Node<T> Head { get; set; }
+        public Node<T> Head { get; private set; }
         public int Count { get; private set; }
         public bool IsEmpty { get; private set; }
 

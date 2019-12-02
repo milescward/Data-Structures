@@ -22,6 +22,7 @@
   <ItemGroup>
     <Folder Include="SinglyLinkedList.Tests\" />
     <Folder Include="BinaryTree.Tests\" />
+    <Folder Include="Stack.Tests\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
