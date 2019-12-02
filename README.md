@@ -7,6 +7,41 @@
 
 - [X] Create Node class
 - [X] Refactor to make node class and linked list
+      classes generic. Node<T>
+- [X] Add new node
+- [X] Compare two generic nodes
+- [X] Delete a specific value from the list
+- [X] Display all node values
+- [ ] Display values in reverse
+
+</p>
+</details>
+
+<details><summary>Tests</summary>
+<p>
+
+- [X] All Node properties
+  - [X] IsEmpty Property
+  - [X] Count Property
+  - [X] Head Property
+- [X] Add new node
+- [X] Delete a value 
+  - [X] from the front
+  - [X] from the back
+  - [X] nonexistant value
+- [X] Display all node values
+- [ ] Display values in reverse
+
+</p>
+</details>
+
+### Doubly Linked List
+
+<details><summary>Methods</summary>
+<p>
+
+- [X] Create DNode<T> class
+- [X] Refactor to make node class and linked list
       classes generic.
 - [X] Add new node
 - [X] Compare two generic nodes
@@ -23,13 +58,15 @@
 - [X] All Node properties
   - [X] IsEmpty Property
   - [X] Count Property
-- [X] Add new node
+  - [X] Head Property
+  - [X] Tail Property
+- [X] Add DNode<T> to front
+- [X] Add DNode<T> to back
 - [X] Delete a value 
   - [X] from the front
   - [X] from the back
   - [X] nonexistant value
-- [X] Display all node values
-- [ ] Display values in reverse
+
 
 </p>
 </details>
