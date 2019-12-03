@@ -3,6 +3,8 @@ namespace DataStructures.SortingAlgorithms
 {
     public class InsertionSort
     {
+        // O(n2) time complexity
+        // O(1) space complexity
         public int[] Sort(int[] arr)
         {
             int len = arr.Length;
