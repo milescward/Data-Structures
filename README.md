@@ -163,7 +163,6 @@ accompanying unit tests for all properties and methods
 </p>
 </details>
 
-## SORTING AND SEARCHING ALGORITHMS
 
 ## SORTING ALGORITHMS
 
@@ -172,9 +171,9 @@ accompanying unit tests for all properties and methods
 
 - [X] Bubble Sort
 - [X] Insertion Sort
-- [X] Selection Sort
-- [X] Merge Sort
-- [X] Quick Sort
+- [ ] Selection Sort
+- [ ] Merge Sort
+- [ ] Quick Sort
 
 </p>
 </details>
