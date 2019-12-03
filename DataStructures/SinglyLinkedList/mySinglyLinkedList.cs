@@ -33,7 +33,7 @@ namespace DataStructures.SinglyLinkedList
             AddNode(node);
         }
 
-        private bool Compare<T>(T x, T y)
+        private bool Compare(T x, T y)
         {
             return EqualityComparer<T>.Default.Equals(x, y);
         }
