@@ -11,6 +11,6 @@
     <Folder Include="Stack\" />
     <Folder Include="DoublyLinkedList\" />
     <Folder Include="Queue\" />
-    <Folder Include="Sorting Algorithms\" />
+    <Folder Include="SortingAlgorithms\" />
   </ItemGroup>
 </Project>

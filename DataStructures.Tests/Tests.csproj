@@ -24,6 +24,7 @@
     <Folder Include="BinaryTree.Tests\" />
     <Folder Include="Stack.Tests\" />
     <Folder Include="DoublyLinkedList.Tests\" />
+    <Folder Include="SortingAlgorithms.Tests\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
