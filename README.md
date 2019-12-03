@@ -172,8 +172,9 @@ accompanying unit tests for all properties and methods
 - [X] Bubble Sort
 - [X] Insertion Sort
 - [X] Selection Sort
-- [ ] Merge Sort
+- [X] Merge Sort
 - [ ] Quick Sort
+- [ ] Radix Sort
 
 </p>
 </details>
@@ -181,11 +182,12 @@ accompanying unit tests for all properties and methods
 <details><summary>Tests</summary>
 <p>
 
-- [ ] Bubble Sort
-- [ ] Insertion Sort
-- [ ] Selection Sort
+- [X] Bubble Sort
+- [X] Insertion Sort
+- [X] Selection Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
+- [ ] Radix Sort
 
 </p>
 </details>
