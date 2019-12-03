@@ -3,7 +3,7 @@
 My creation and implementation of major data structures from scratch with 
 accompanying unit tests for all properties and methods
 
-## Singly Linked List
+## Singly Linked List\<T>
 
 <details><summary>Methods</summary>
 <p>
@@ -38,7 +38,7 @@ accompanying unit tests for all properties and methods
 </p>
 </details>
 
-## Doubly Linked List
+## Doubly Linked List\<T>
 
 <details><summary>Methods</summary>
 <p>
@@ -110,7 +110,7 @@ accompanying unit tests for all properties and methods
 </p>
 </details>
 
-## Stack
+## Stack\<T>
 
 <details><summary>Methods</summary>
 <p>
@@ -137,7 +137,7 @@ accompanying unit tests for all properties and methods
 </p>
 </details>
 
-## Queue
+## Queue\<T>
 
 <details><summary>Methods</summary>
 <p>
