@@ -13,9 +13,10 @@ namespace DataStructures.SortingAlgorithms
             // given array split down the middle
             int[] left = new int[m], right = new int[len - m];
             // Fill the new arrays with the elements from the original array
-            for (int i = 0; i < m; i++) {
-                left[i] = arr[i];
-                right[i] = arr[i + m];}
+            for (int i = 0; i < m; i++){
+                left[i] = arr[i];}
+            for (int i = 0; m < len; i++) {
+                right[i] = arr[m++];}
             // Recursively break the smaller arrays down until they're
             // all the size of just one single array.
             Sort(left); Sort(right);
