@@ -3,7 +3,8 @@ namespace DataStructures.SortingAlgorithms
 {
     public class MergeSort
     {
-        // This portion of the 
+        // Merge Sort runtime complexity O(n log n)
+        // Space Complexity O(n)
         public int[] Sort(int[] arr) {
             // Get the length and middle of the array
             int len = arr.Length, m = len / 2;
