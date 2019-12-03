@@ -171,7 +171,7 @@ accompanying unit tests for all properties and methods
 
 - [X] Bubble Sort
 - [X] Insertion Sort
-- [ ] Selection Sort
+- [X] Selection Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 
