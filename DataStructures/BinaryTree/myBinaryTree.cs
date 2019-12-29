@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using DataStructures.Queue;
 
@@ -111,6 +112,39 @@ namespace DataStructures.BinaryTree
                 {
                     InorderTraversal(root, res);
                 }
+            }
+        }
+
+        public IList<int> PostorderTraversal()
+        {
+            var res = new List<int>();
+            PostorderTraversal(_root, res);
+            return res;
+        }
+
+        private void PostorderTraversal(TreeNode root, List<int> res)
+        {
+            if (root != null)
+            {
+                var stack = new Stack<TreeNode>();
+                TreeNode node;
+                stack.Push(root);
+
+                while (stack.Any())
+                {
+                    node = stack.Pop();
+                    res.Add(node.Data);
+                    if (node.Left != null)
+                    {
+                        stack.Push(node.Left);
+                    }
+                    if (node.Right != null)
+                    {
+                        stack.Push(node.Right);
+                    }
+                }
+
+                res.Reverse();
             }
         }
 
