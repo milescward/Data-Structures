@@ -12,5 +12,6 @@
     <Folder Include="DoublyLinkedList\" />
     <Folder Include="Queue\" />
     <Folder Include="SortingAlgorithms\" />
+    <Folder Include="Graph\" />
   </ItemGroup>
 </Project>

@@ -91,6 +91,29 @@ namespace DataStructures.BinaryTree
             return output;
         }
 
+        public IList<int> InorderTraversal()
+        {
+            var res = new List<int>();
+            InorderTraversal(_root, res);
+            return res;
+        }
+
+        private void InorderTraversal(TreeNode root, IList<int> res)
+        {
+            if (root != null)
+            {
+                if (root.Left != null)
+                {
+                    InorderTraversal(root, res);
+                }
+                res.Add(root.Data);
+                if (root.Right != null)
+                {
+                    InorderTraversal(root, res);
+                }
+            }
+        }
+
         public myBinaryTree()
         {
             _root = null;
