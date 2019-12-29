@@ -86,7 +86,7 @@ accompanying unit tests for all properties and methods
 - [X] Insert recursively
 - [X] Display all nodes
 - [ ] Traversals
-  - [ ] Inorder
+  - [X] Inorder
   - [X] Preorder
   - [ ] Postorder
   - [ ] Breadth First Search (BFS)
